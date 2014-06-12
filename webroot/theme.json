@@ -1,0 +1,20 @@
+{
+	"name" : "BsCroogo",
+	"description" : "Bootstrap Theme for Croogo",
+	"screenshot" : "/screenshot.png",
+
+	"author" : "Steven van Oosten",
+	"authorEmail" : "stevenvanoosten@outlook.com",
+	"authorUrl" : "https://twitter.com/stevenvanoosten",
+
+	"menus" : [
+		"main",
+		"footer"
+		],
+
+	"regions" : [
+		"left",
+		"right",
+		"region1"
+		]
+}
