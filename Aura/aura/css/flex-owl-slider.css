@@ -1,0 +1,194 @@
+
+#container { margin: 0 auto; width: 940px; position:relative; }
+
+.flexowlslider .owlslides > li.dnone { display:none; position:static; }
+
+.flexowlslider .owlslides > li { display: block; position:absolute; } /* Hide the owlslides before the JS is loaded. Avoids image jumping */
+
+.flexowlslider .owlslides > li:first-child { position:static; }
+
+.flex-pauseplay span { text-transform: capitalize; }
+
+/* Clearfix for the .owlslides element */
+.owlslides:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+
+html[xmlns] .owlslides { display: block; }
+
+* html .owlslides { height: 1%; }
+
+.flexowlslider { height: 350px; width: 100%; overflow: hidden; position: relative; }
+
+.flexowlslider .owlslides img { max-width: 100%; display: block; }
+
+.flexowlslider iframe { width: 100%; height: 350px; }
+
+.flexowlslider .prev, .flexowlslider .next { display:none; }
+
+.owl-flex-caption-right { background: none repeat scroll 0 0 #00C6F5; height: 100%; padding: 0 40px; position: absolute; right: 0; -moz-box-shadow: 0 0 50px 50px #00A6CF inset;/*FF 3.5+*/ -webkit-box-shadow: 0 0 50px 50px #00A6CF inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/ box-shadow: 0 0 50px 50px #00A6CF inset; }
+
+.owl-flex-caption-left { background: none repeat scroll 0 0 #00C6F5; height: 100%; padding: 0 40px; position: absolute; left: 0; -moz-box-shadow: 0 0 50px 50px #00A6CF inset;/*FF 3.5+*/ -webkit-box-shadow: 0 0 50px 50px #00A6CF inset;/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/ box-shadow: 0 0 50px 50px #00A6CF inset; }
+
+.owl-slide-text-1 { border-left: 3px solid #FFFFFF; color: #FFFFFF; font-family: open sans; font-size: 37px; font-weight: 500; line-height: 50px; margin-bottom: 20px; padding-left: 30px; }
+
+.owl-slide-text-2 { border-right: 3px solid #FFFFFF; color: #FFFFFF; font-family: open sans; font-size: 37px; font-weight: 500; line-height: 50px; margin-bottom: 20px; padding-right: 30px; }
+
+.owl-slide-text-1 a, .owl-slide-text-2 a { color: #097CAD; }
+
+.owl-slide-text-1 a:hover, .owl-slide-text-2 a:hover { color:#fff; }
+
+.owl-flex-border-1 { width: 530px; }
+
+.flex-border { padding: 30px 60px 30px 30px; width:240px; background: url("../images/slider-img/flex-border.html") repeat-y scroll 294px 0 transparent; }
+
+.owl-flex-bg { display: block; margin-top: 81px; }
+
+/*=========================================================================
+ Control Nav 
+ ========================================================================= */
+.flexowlslider .flex-owl-control-nav { position:absolute; right:10px; bottom: 10px; list-style:none; z-index:5; }
+
+.flexowlslider .flex-owl-control-nav li { float: left; padding: 0 3px; }
+
+.flexowlslider .flex-owl-control-nav li a { display:block; text-indent:-999em; width:15px; height:15px; background: url('../images/slider-img/nav-marker.png') no-repeat; margin-bottom:5px; }
+
+.flexowlslider .flex-owl-control-nav li a:hover, .flexowlslider .flex-owl-control-nav li a.active { background: url('../images/slider-img/nav-marker.png') no-repeat 0 -15px; }
+
+.slider { width:940px; position:relative; z-index:1; margin:0 auto 0; padding:30px 0 0 0; }
+
+.flexowlslider2 { width: 100%; margin: 0; }
+
+.flexowlslider2 .owlslides > li { display: none; } /* Hide the owlslides before the JS is loaded. Avoids image jumping */
+
+.flexowlslider2 .owlslides > li { }
+
+/*=========================================================================
+LIST ELEMENTS
+========================================================================= */
+
+.owl-slider-list-style { display: inline-block; margin: 10px 0; }
+
+.owl-slider-list-style li { border-bottom: 1px solid rgba(0, 0, 0, 0.1); display: block; float: left; margin: 0 15px !important; padding: 7px 0 8px 24px; width: 181px; }
+
+.owl-slider-list-style li a img { padding-right: 12px; width: auto !important; }
+
+.owl-slider-list-style li a { color: #777; font-weight: bold; text-decoration: none; }
+
+.owl-slider-list-style li a:hover { color: #000; -webkit-transition:all 0.5s ease; -moz-transition:all 0.5s ease; -o-transition:all 0.5s ease; transition:all 0.5s ease; behavior: url(js/PIE.html); }
+
+.owl-slider-check-list-2 { list-style: none; margin: 0; padding: 0 0 0 24px; }
+
+.owl-slider-check-list-2 { background: url("../images/slider-img/list-arrow-2.html") no-repeat scroll 0 10px transparent; }
+
+.row-2 { margin: 0 0 50px; position: relative; }
+
+.flex-shadow { position: absolute; width: 100%; z-index: 1; }
+
+.owl-flex-caption a { color:#777; outline:none; cursor:pointer; text-decoration: underline; }
+
+.owl-flex-caption a:hover { color:#000; }
+
+/* Clearfix for the .owlslides element */
+.owlslides:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+
+html[xmlns] .owlslides { display: block; }
+
+* html .owlslides { height: 1%; }
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+ .flexowlslider {
+height: 270px;
+}
+ .flexowlslider .owl-flex-caption {
+}
+ .owl-flex-border-1 {
+width: 380px;
+}
+.owl-flex-bg {
+ margin-top: 71px;
+}
+.owl-slide-text-1 {
+ font-size: 27px;
+ line-height: 40px;
+}
+.owl-slide-text-2 {
+ font-size: 27px;
+ line-height: 40px;
+}
+ .owl-slider-list-style {
+display: none;
+}
+ .flexowlslider iframe {
+width: 100%;
+height: 270px;
+}
+ .flexowlslider .owlslides img {
+}
+ .slider {
+width:748px;
+}
+ .flex-owl-control-nav {
+position:absolute;
+}
+}
+ @media only screen and (max-width: 767px) {
+ .flexowlslider {
+height: 134px;
+}
+ .owl-flex-caption-right, .owl-flex-caption-left {
+display: none;
+}
+ .flexowlslider .owl-flex-caption {
+display:none;
+}
+ .flexowlslider iframe {
+height: 134px;
+width: 100%;
+}
+ .flexowlslider .owlslides img {
+max-width: 100%;
+}
+ .slider {
+width:300px;
+}
+ .flex-owl-control-nav {
+position:absolute;
+bottom:38%;
+right:30px;
+}
+ .flex-owl-control-nav li {
+display:block;
+float:none;
+margin-right:0;
+margin-bottom:2px;
+}
+}
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+ .flexowlslider {
+height: 227px;
+}
+ .owl-flex-border-1 {
+width: 330px;
+}
+.owl-flex-bg {
+ margin-top: 32px;
+}
+.owl-slide-text-1 {
+ font-size: 27px;
+ line-height: 40px;
+}
+.owl-slide-text-2 {
+ font-size: 27px;
+ line-height: 40px;
+}
+ .slider {
+width:420px;
+}
+ .flexowlslider iframe {
+height: 227px;
+width: 100%;
+}
+ .flex-owl-control-nav {
+position:absolute;
+bottom:40%;
+right:40px;
+}
+}
