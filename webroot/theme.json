@@ -1,11 +1,11 @@
 {
-	"name" : "BsCroogo",
+	"name" : "AmirTheme",
 	"description" : "Bootstrap Theme for Croogo",
 	"screenshot" : "/screenshot.png",
 
-	"author" : "Steven van Oosten",
-	"authorEmail" : "stevenvanoosten@outlook.com",
-	"authorUrl" : "https://twitter.com/stevenvanoosten",
+	"author" : "Amir Moharami",
+	"authorEmail" : "a.moharami@gmail.com",
+	"authorUrl" : "www.amirmoharami.ir",
 
 	"menus" : [
 		"main",
@@ -13,7 +13,6 @@
 		],
 
 	"regions" : [
-		"left",
 		"right",
 		"region1"
 		]

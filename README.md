@@ -1,4 +1,4 @@
-Croogo Theme: AmiTheme
+Croogo Theme: AmirTheme
 ========
 
 A Bootstrap starter theme for Croogo 2 (a cms based on CakePHP)
