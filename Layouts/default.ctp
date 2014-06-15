@@ -25,7 +25,22 @@
 		  	<?php  echo $this->element('header'); ?>
 		  	<?php  echo $this->element('page-title'); ?>
 		  	<?php  echo $this->Layout->sessionFlash(); ?>
-		  	<?php  echo $content_for_layout;?>
+		  	<?php if ($this->Regions->blocks('left')): ?>
+		  	<?php endif; ?>
+		  	<div class="container">
+				  	<?php
+				  		echo $this->Layout->sessionFlash();
+				  		echo $content_for_layout;		  		
+				  	?>
+				  	<?php if ($this->Regions->blocks('right')): ?>
+				  		<div class="fright">
+				  			<div class="five columns">
+				  				<?php echo $this->Regions->blocks('right'); ?>
+				  			</div>
+				  			
+				  		</div>
+				  	<?php endif; ?>
+		    </div>		  			  	
 		  	<?php  echo $this->element('footer'); ?>
 		  </div>
 		</div>

@@ -1,7 +1,5 @@
-
-<div class="container">
-	<div class="fleft">
-		<div class="eleven columns">
+<div class="fleft">
+	<div class="eleven columns">
 		<div class="post-border-right">
 			<?php
 				foreach ($nodes as $node):
@@ -17,15 +15,16 @@
 			<?php
 				endforeach;
 			?>
-
-			
-		</div>
-
-			
-		</div>
-	</div>
-	<div class="fright">
-		
+			<div class="nodes promoted">
+				<?php
+					if (count($nodes) == 0) {
+						echo __d('croogo', 'No items found.');
+					}
+				?>
+				<div class="paging"><?php echo $this->Paginator->numbers(); ?></div>
+			</div>
+					
+		</div>			
 	</div>
 </div>
 
@@ -34,14 +33,3 @@
 
 
 
-<div class="nodes promoted">
-	<?php
-		if (count($nodes) == 0) {
-			echo __d('croogo', 'No items found.');
-		}
-	?>
-
-	
-
-	<div class="paging"><?php echo $this->Paginator->numbers(); ?></div>
-</div>

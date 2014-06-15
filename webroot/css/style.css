@@ -754,7 +754,7 @@ input:focus { outline:none; }
 
 #searchForm fieldset { width:240px; position: absolute; right: 20px; top: 10px; display:block; margin: 0; }
 
-div.input { width:120px !important; padding: 11px 15px; border-radius: 3px 3px 3px 3px; border:1px solid #3A3A3A; box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.08); float:right; background:#000; }
+div.input { padding: 11px 15px;  box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.08); float:left; }
 
 div.input.focus { border:1px solid #000; box-shadow:0 0 6px #666, inset 0 1px 2px rgba(0, 0, 0, 0.08); }
 
@@ -1006,7 +1006,7 @@ border-radius: 0 0 3px 3px; }
 
 .post-meta { border-top: 1px solid #F7F7F7; border-bottom: 1px solid #F7F7F7; float: left; padding: 10px 0; overflow:hidden; margin-bottom:20px; }
 
-.post-meta a { color: #777; padding: 0 6px 0 0; text-decoration:none; }
+.post-meta a { color: #777; padding: 0 8px 0 0; text-decoration:none; }
 
 .post-meta a:hover { color: #000; }
 
