@@ -1,82 +1,70 @@
-<?php
-// Adjusting content width
-if ($this->Regions->blocks('left') and $this->Regions->blocks('right')) {
-	$span = "span6";
-}
-elseif ($this->Regions->blocks('left') xor $this->Regions->blocks('right')) {
-	$span = "span9";
-}
-else {
-	$span = "span12";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title><?php echo $title_for_layout; ?> &raquo; <?php echo Configure::read('Site.title'); ?></title>
-		<?php
-			echo $this->Meta->meta();
-			echo $this->Layout->feed();
-			echo $this->Html->css(array(
-				'/css/bootstrap',
-				'/css/bootstrap-responsive',
-				'/css/theme',
-			));
-			echo $this->Blocks->get('css');
-	    ?>
-	
+	<link href='http://fonts.googleapis.com/css?family=Arial:300italic,300,400,400italic,600,600italic,700,700italic|Open+Sans:300italic,300,400,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic,700|Copse' rel='stylesheet' type='text/css'>
+	<?php 
+		echo $this->Html->css(array(
+			'/css/style',
+			'/css/skeleton',
+			'/css/font-awesome',
+			'/css/imagebox',
+			'/css/carousel',
+			'/css/fdw-demo',
+			'/css/colorbox',
+			'/css/elements',
+			'/css/superfish',
+			'/css/blue-color',
+			'/css/forms',
+		));
+	 ?>
 	</head>
 	<body>
-		<div id="wrap">
-			<?php echo $this->element('header'); ?>
-			
-			<div class="container">
-				<div class="row-fluid">
-					<?php if ($this->Regions->blocks('left')): ?>
-						<div class="span3">
-							<?php echo $this->Regions->blocks('left'); ?>
-						</div>
-					<?php endif; ?>
-		
-					<div class="<?php echo $span; ?>">
-					<?php
-						echo $this->Layout->sessionFlash();
-						echo $content_for_layout;
-					?>
-					</div>
-					
-					<?php if ($this->Regions->blocks('right')): ?>
-						<div class="span3">
-							<?php echo $this->Regions->blocks('right'); ?>
-							<?php echo $this->element('accordion'); ?>
-						</div>
-					<?php endif; ?>
-				</div>
-			</div>
-			<div id="push"></div>
+		<div class="bg-shine">
+		  <div class="bodywrapper">
+		  	<?php  echo $this->element('header'); ?>
+		  	<?php  echo $this->element('page-title'); ?>
+		  	<?php  echo $this->Layout->sessionFlash(); ?>
+		  	<?php if ($this->Regions->blocks('left')): ?>
+		  	<?php endif; ?>
+		  	<div class="container">
+				  	<?php
+				  		echo $this->Layout->sessionFlash();
+				  		echo $content_for_layout;		  		
+				  	?>
+				  	<?php if ($this->Regions->blocks('right')): ?>
+				  		<div class="fright">
+				  			<div class="five columns">
+				  				<?php echo $this->Regions->blocks('right'); ?>
+				  			</div>
+				  			
+				  		</div>
+				  	<?php endif; ?>
+		    </div>		  			  	
+		  	<?php  echo $this->element('footer'); ?>
+		  </div>
 		</div>
-	
-		<div id="footer">
-			<div class="container">
-				<div class="row-fluid">
-					<div class="pull-left">
-						Powered by <a href="http://www.croogo.org">Croogo</a>.
-					</div>
-					<div class="pull-right">
-						<a href="http://www.cakephp.org"><?php echo $this->Html->image('/img/cake.power.gif'); ?></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Js placed at the end of the document so the pages load faster -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
 	    <?php      
 			echo $this->Layout->js();
 			echo $this->Html->script(array(
-				'/js/bootstrap',
+				'/js/jquery.js',
+				'/js/jquery.easing.1.3',
+				'/js/jquery.responsivemenu',
+				'/js/superfish',
+				'/js/nav-small',
+				'/js/jquery.flexslider.text',
+				'/js/jquery.flex-owl-slider-min',
+				'/js/jquery.elastislide',
+				'/js/jquery-hover-effect',
+				'/js/jquery.colorbox-min',
+				'/js/tooltip',
+				'/js/jquery.tipsy',
+				'/js/jquery.ui.totop',
+				'/js/jquery.isotope.min',
+				'/js/popover',
+				'/js/imagebox.min',
+				'/js/script',
+				'/js/custom',
 			));			
 			echo $this->Blocks->get('script');
 			echo $this->Blocks->get('scriptBottom');

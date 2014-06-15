@@ -1,0 +1,54 @@
+::selection {
+background:#00C3F4 !important;
+}
+::-moz-selection {
+background:#00C3F4 !important;
+}
+
+body { background: url("../images/overlay.png") repeat scroll 50% 0 #C8D7DE !important; }
+
+a.link-name { color:#00C3F4 !important; }
+
+.shade1 { background-color: #0091C2 !important; }
+
+.shade2 { background-color: #00A3D4 !important; }
+
+.shade3 { background-color: #00C3F4 !important; }
+
+.team-name span { color: #00C3F4 !important; }
+
+.text-color-red { color: #00C3F4 !important; }
+
+.text-color-red { color: #00C3F4 !important; }
+
+.text-color-blue { color: #F7741C !important; }
+
+.newsletter-button:hover { background: none repeat scroll 0 0 #00C3F4 !important; border: 1px solid #AF242C; color: #FFFFFF; }
+
+.quotes .flex-control-nav li a:hover, .quotes .flex-control-nav li a.active { background: none repeat scroll 0 0 #00C3F4 !important; }
+
+.sf-menu li.active { background: none repeat scroll right 0 #00C3F4 !important; }
+
+.sf-menu li:hover, .sf-menu li.current-menu-item, .sf-menu li.sfHover, .sf-menu li.current-menu-parent { background: none repeat scroll right 50% #00C3F4 !important; }
+
+a.moduleItemReadMore:before { background: #00C3F4 !important; }
+
+.list-style-1 li a:hover { color: #00C3F4 !important; }
+
+.list-style li a:hover { color: #00C3F4 !important; }
+
+.faq-accordion .qa { color: #00C3F4 !important; }
+
+.faq_list span.marker { color:#00C3F4 !important; }
+
+.price-column-featured h4 { background-color: #00C3F4 !important; }
+
+span.link_post:hover { background-color: #00C3F4 !important; }
+
+span.zoom:hover { background-color: #00C3F4 !important; }
+
+span.video:hover { background-color: #00C3F4 !important; }
+
+.button.yellow, input[type="button"] { border: 1px solid #1f70ad !important; background-image: linear-gradient(bottom, #2778C8 0%, #2B8EC7 100%) !important; background-image: -o-linear-gradient(bottom, #2778C8 0%, #2B8EC7 100%) !important; background-image: -moz-linear-gradient(bottom, #2778C8 0%, #2B8EC7 100%) !important; background-image: -webkit-linear-gradient(bottom, #2778C8 0%, #2B8EC7 100%) !important; background-image: -ms-linear-gradient(bottom, #2778C8 0%, #2B8EC7 100%) !important; background-color: #2778C8 !important; color:#fff !important; text-shadow: 1px -1px 0px #1c6396 !important; filter: dropshadow(color=#1c6396, offx=1, offy=1) !important; }
+
+.button.yellow:hover { background: #2778C8 !important; }
