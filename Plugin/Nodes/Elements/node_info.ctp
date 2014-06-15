@@ -46,9 +46,12 @@
 			<i class="icon-eye-open"></i> 
 			<a href="#"> 16 Views</a> 
 			<i class="icon-comments-alt"></i> 
-			<a href="#">
-				<?php echo $commentCount;?>				
-			</a> 
+			<?php if (isset($commentCount)): ?>
+				<a href="#">
+					<?php echo $commentCount;?>				
+				</a> 				
+			<?php endif ?>
+			
 			<i class="icon-tag"></i> 
 			<a href="#"> template,</a> 
 			<a href="#"> wordpress,</a> 
