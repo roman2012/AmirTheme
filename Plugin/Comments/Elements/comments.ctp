@@ -1,4 +1,4 @@
-<div class="comments">
+<div class="title ident-bot-5">
 <?php
 	$commentHeading = $node['Node']['comment_count'] . ' ';
 	if ($node['Node']['comment_count'] == 1) {
