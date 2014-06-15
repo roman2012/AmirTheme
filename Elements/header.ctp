@@ -13,7 +13,8 @@
         </div>
         <!-- menu -->
         <nav  id = "main-nav-menu">
-          <ul class="sf-menu">
+        <?php echo $this->Custom->menu('main', array('dropdown' => true)); ?>
+<!--           <ul class="sf-menu">
             <li><a href="index.html">Home</a>
               <ul>
                 <li><a href="index.html">Home 1</a></li>
@@ -68,7 +69,7 @@
               </ul>
             </li>
             <li><a href="contact.html">Contact</a></li>
-          </ul>
+          </ul> -->
         </nav>
         <!-- end menu -->
         <select id = "responsive-main-nav-menu" onchange = "javascript:window.location.replace(this.value);">
